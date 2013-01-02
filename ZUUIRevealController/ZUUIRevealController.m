@@ -441,7 +441,7 @@
 	{
 		float dynamicTriggerLevel = (FrontViewPositionLeft == self.currentFrontViewPosition) ? self.revealViewTriggerWidth : self.concealViewTriggerWidth;
 		
-		if (self.frontView.frame.origin.x >= dynamicTriggerLevel && self.frontView.frame.origin.x != self.rearViewRevealWidth)
+		if (self.frontView.frame.origin.x >= dynamicTriggerLevel)
 		{
 			[self _revealAnimationWithDuration:self.toggleAnimationDuration];
 		}
